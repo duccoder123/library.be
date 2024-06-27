@@ -17,8 +17,7 @@ namespace library.be.Services
             if (book is null && book.Amount == 0) { 
                 
             }
-            var claimsIdentity = (ClaimsIdentity)User.Identity;
-            var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+            
         }
     }
 }

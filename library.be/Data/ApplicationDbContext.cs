@@ -6,12 +6,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace library.be.Data
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, int>
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext()
-        {
-            
-        }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options){}
 
         public DbSet<ApplicationUser> applicationUsers { get; set; }    
